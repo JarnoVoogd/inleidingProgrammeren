@@ -21,10 +21,11 @@ function zoolVeranderen() {
     } else {
         //niks
     }
+
+    schoenCheck();
     //het nummer van de array staat voor de titel van het bestand en dat wordt in html de src van de afbeelding
     zoolFoto.setAttribute("src", zoolArray[huidigeZoolFoto]);
 };
-
 
 
 var logoArray = ["IMG/swooshWit.png", "IMG/swooshRood.png", "IMG/swooshRoze.png", "IMG/swooshGroen.png", "IMG/swooshZwart.png"];
@@ -42,6 +43,7 @@ function logoVeranderen() {
     } else {
         //niks
     }
+    schoenCheck();
     logoFoto.setAttribute("src", logoArray[huidigeLogoFoto]);
 };
 
@@ -57,3 +59,23 @@ function resetSchoen() {
     logoFoto.setAttribute("src", logoArray[huidigeLogoFoto]);
     zoolFoto.setAttribute("src", zoolArray[huidigeZoolFoto]);
 }
+
+function schoenCheck() {
+
+
+    if (huidigeZoolFoto == 4 && huidigeLogoFoto == 3){
+    document.querySelector("#schoennaam").innerHTML = "Dit is de Travis Scott Jordan!";
+    console.log("test");
+    } else{ 
+        document.querySelector("#schoennaam").innerHTML = "";
+}
+}
+
+   
+    
+
+
+
+
+
+//jordan if else statement
